@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher SignIn</title>
+</head>
+
+    <link rel="stylesheet" href="../static/homecss.css" type="text/css">
+    <body bgcolor="powderblue">
+        
+    <div class="header">
+        <h1>WELCOME TO MITS TUTOR LOGIN</h1>
+        <p>CSE Department</p>
+    </div>
+    <div class="div-1">
+        <link rel="stylesheet" href="../styles/teachercss.css" type="text/css">
+        
+        <center>
+
+                <form action="{{ url_for('login') }}" method="post" class="forms"> 
+
+                  
+                  <label>Email Address</label>
+
+                    <input id="email" name="email" type="text" placeholder="Enter Your email" class="textbox"/></br></br> 
+                    <label>Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+
+                    <button class="b">SignIn</button>
+                    <button class="c" ><a href="{{url_for('register')}}" >Sign Up</a></button>
+
+                
+
+           
+
+
+        </form>
+    </center>
+</div>
+</body>
+
+</html> 
